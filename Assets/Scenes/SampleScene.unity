@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 1079082284}
   - component: {fileID: 1079082283}
   m_Layer: 0
-  m_Name: spaceship5
+  m_Name: AvionJugador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
