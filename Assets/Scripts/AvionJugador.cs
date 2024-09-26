@@ -14,6 +14,15 @@ public class NaveJugador : MonoBehaviour
         _vel = 8f;
         minpantalla = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
         maxpantalla = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+
+        float meitatMidaImatgeX = GetComponent<SpriteRenderer>().sprite.bounds.size.x * transform.localScale.x / 2;
+        float meitatMidaImatgeY = GetComponent<SpriteRenderer>().sprite.bounds.size.y * transform.localScale.y / 2;
+
+        minpantalla.x = minpantalla.x + meitatMidaImatgeX;
+        maxpantalla.x = maxpantalla.x - meitatMidaImatgeX;
+        minpantalla.y += meitatMidaImatgeY;
+        maxpantalla.y -= meitatMidaImatgeY;
+
     }
 
     // Update is called once per frame
