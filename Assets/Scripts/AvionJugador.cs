@@ -9,7 +9,7 @@ public class NaveJugador : MonoBehaviour
     private Vector2 minpantalla, maxpantalla;
 
     [SerializeField]private GameObject prefabProjectil;
-    
+    [SerializeField]private GameObject prefabExplosio;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,5 +58,16 @@ public class NaveJugador : MonoBehaviour
         novaPos.y = Mathf.Clamp(novaPos.y, minpantalla.y, maxpantalla.y);
 
         transform.position = novaPos;
+    }
+
+    private void OnTriggerEnter2D(Collider2D objecteTocat)
+    {
+        if(objecteTocat.tag == "Numero")
+        {
+            GameObject Explosio = Instantiate(prefabExplosio);
+            Explosio.transform.position = transform.position;
+            
+            Destroy(gameObject);
+        }
     }
 }
