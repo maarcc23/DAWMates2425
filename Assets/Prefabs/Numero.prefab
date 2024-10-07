@@ -94,6 +94,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 3726478574719046975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf819f53cd16e3840a82b8bb32e855c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0862d53073cc2f545a5fd9de363c97cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arraySpritesNumeros:
+  - {fileID: 21300000, guid: 27bd5cac31b7508489b53d9dc6242aa8, type: 3}
+  - {fileID: 21300000, guid: 0201b472ee8d383418fb447a40d7cc0a, type: 3}
+  - {fileID: 21300000, guid: 588efd936a114d44aa8db9a3bd1591e6, type: 3}
+  - {fileID: 21300000, guid: c46f570203774c245bd2444228dd5af1, type: 3}
+  - {fileID: 21300000, guid: 0f23d92d0f253db479671390e71fdc16, type: 3}
+  - {fileID: 21300000, guid: f283a64af6c8c524eb6bf925909c6e4d, type: 3}
+  - {fileID: 21300000, guid: a9e1fbb84dc4e924486efb8de4de71e5, type: 3}
+  - {fileID: 21300000, guid: 487fbd3939ddc6d41a9887173e20eef1, type: 3}
+  - {fileID: 21300000, guid: bef37b28ac550d940b51caeb451aeb68, type: 3}
+  - {fileID: 21300000, guid: 8d4a247c1c7df804a999c7c7480124e6, type: 3}
