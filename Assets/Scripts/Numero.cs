@@ -44,7 +44,9 @@ public class Numero : MonoBehaviour
             GameObject Explosio = Instantiate(prefabExplosio);
             Explosio.transform.position = transform.position;
 
+            DadesGlobals.punts += valorNumero;
             Destroy(gameObject);
+
         }
     }
 }

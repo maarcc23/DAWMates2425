@@ -8,6 +8,7 @@ public class AnarpantallaJoc : MonoBehaviour
    
     public void AnarpantallaJugant()
     {
+        DadesGlobals.ReiniciarPunts();
         SceneManager.LoadScene("pantallajugant");
     }
 }

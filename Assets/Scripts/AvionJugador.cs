@@ -3,6 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
+/*
+* Repas
+*
+* Que hem vist:
+*   -crear objectes a l'escena.
+*   -crear EmptyObjects. (PEREXEMPLE PER FER EL GeneradorNumeros).
+*   - Prefab (per crear objectes quan el joc esta en execució).
+*       -Per crear-los: l'objecte que ja teniem creat l'arroseguem a la carpeta Prefab
+*       -Per crear un Prefab en l'escena en execució: Metode Instantiate(VariablePrefab).
+*            -variablePrefab: variable de tipus GameObject.
+*            
+*   -Trobar posició objecte actual: tranform.position.
+*   -Trobar marges pantalla: Camera.main.ViewportToWorldPoint().
+*   -[SerilizeField]: per fer una variable private de la class es mostri a l'editor de Unity.
+*   -Utilitzar una imatge/sprite com si fos mès d'una (contenint subimatges)
+*       -Seleccionar l'esprite
+*       -En l'opció Sprite Mode cambien de Single a Multiple, i cliquem botó Apply.
+*       -Fem servir les ocpions del botó Sprite Editor.
+*
+*   -Destruir object actual: Destroy(gameObject).
+*   -Crear un metode al cap de x segons: Invoke("NomMetode", xf).
+*   -Cridar un metode al cap de x segons i cada y segons: InvokeRepeating("NomMetode", xf, yf).
+*   -Com aturar un InvokeRepeating: CancelInvoke("NomMetode").
+*   -Detectar objecte toca a altre: 
+*       -Afegir els objectes que volem que es toquin, els components: BoxCollider2D i Rigidbody2D
+*       -En BoxCollider2D: activar checkbox IStrigger.
+*       -En Rigidbody2D: GravityScale posar-lo a 0.
+*
+*
+*/
+
+
+
+
+
 public class NaveJugador : MonoBehaviour
 {
     private float _vel;
@@ -88,3 +125,5 @@ public class NaveJugador : MonoBehaviour
             
     }
 }
+
+
